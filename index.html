@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jits Doomen Research Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #000;
+            background-color: #fff;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            text-decoration: underline;
+            margin-bottom: 40px;
+            font-weight: bold;
+        }
+        h3 {
+            border-bottom: 1px solid #000;
+            padding-bottom: 5px;
+            margin-top: 30px;
+            font-size: 1.2em;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .math {
+            font-family: Arial, Helvetica, sans-serif;
+            white-space: pre-wrap;
+            margin: 10px 0;
+            display: block;
+            font-weight: bold;
+        }
+        hr {
+            border: 0;
+            border-top: 2px solid #000;
+            margin: 50px 0;
+        }
+        p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Jits Doomen Research Document</h1>
+    
+    <div class="section">
+    <h3>The Big How?</h3>
+
+        <p>The Magnetic Moon Highway is a project of eighteen Magnetic Rings flying in Orbit around the Earth constantly aligned to launch cargo towards the moon quickly and effiently. Everything is calculated below. But to take care of the power issue, we will use (What I decided to call) a Terran Sphere. The smaller Earth Version of a dyson swarm that includes a lot of magnets shining light onto the magnets to power them.</p>
+        
+        <p>For that we need Photovoltaic Capacitors.<br>
+        Concentration: Area of Mirrors / Area of Receiver</p>
+        
+        <span class="math">C = 122051 / 10</span>
+        <span class="math">C = 12205.1</span>
+
+        <p>The Problem: The heat of this will melt the magnet the second it is used.</p>
+        <p>For this project we will make the receiver out of Tungsten.</p>
+
+        <span class="math">Delta T/s = (16611141 * 10) / (1000 * 130)</span>
+        <span class="math">Delta T/s = 1277.78007692 K/s</span>
+
+        <p>That means the receiver will go from 0 K to 3695 K in nothing short of 2.8 seconds.</p>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h3>Constants and Calculations</h3>
+        <span class="math">Permeability of Free Space = 4 * Pi * 10^-7</span>
+        <span class="math">g = 9.80665 m/s2</span>
+        <span class="math">Stefan Boltzmann Constant = 5.67 * 10^-8</span>
+        <span class="math">LEO = 7800 m/s</span>
+        <span class="math">Lunar Escape Velocity = 2400 m/s</span>
+        <span class="math">Earth Mass = 5.97 * 10^24 kg</span>
+        <span class="math">s = 50 m</span>
+        <span class="math">Earth Gravitational Parameter = 3.986 * 10^14</span>
+        <span class="math">Moon Orbit Distance = 384,400,000 m</span>
+        <span class="math">r = 6,771,000 m</span>
+        <span class="math">LEO Park Altitude = 400,000 m</span>
+        <span class="math">Radius Earth = 6,371,000 m</span>
+        <span class="math">LEO Orbit Radius = 6,771,000 m</span>
+        <span class="math">Vacuum (Permeability) = 1.256 * 10^-6</span>
+    </div>
+
+    <div class="section">
+        <h3>Primary Calculations</h3>
+        <span class="math">Vi = sqrt((3.986 * 10^14) / 6771000)</span>
+        <span class="math">Vi = 7672.6 m/s</span>
+        
+        <span class="math">Vtli (target v) = sqrt(3.986e14 * (2/6771000 - 2/(6771000 + 384400000)))</span>
+        <span class="math">Vtli = 10756.3667729 m/s</span>
+
+        <span class="math">Delta Vtotal = 10756.4 - 7672.6</span>
+        <span class="math">Delta Vtotal = 3083.8 m/s</span>
+
+        <span class="math">SPM (Speed Per Magnet) = 3083.8 / 18</span>
+        <span class="math">SPM = 171.3 m/s</span>
+
+        <span class="math">EVG1 (Exit velocity gate 1) = 7672.6 + 171.3</span>
+        <span class="math">EVG1 = 7843.9 m/s</span>
+
+        <span class="math">a = (7843.9^2 - 7672.6^2) / (2 * 50)</span>
+        <span class="math">a = 26583 m/s2</span>
+
+        <span class="math">Gforce = 26583 / 9.81</span>
+        <span class="math">Gforce = 2710 g</span>
+
+        <span class="math">t = 100 / (7672.6 + 7843.9)</span>
+        <span class="math">t = 0.0064 s</span>
+
+        <span class="math">f (thrust force needed) = 25000 * 26583</span>
+        <span class="math">f = 664,575,000 N</span>
+
+        <span class="math">E (energy per pulse) = 0.5 * 25000 * (7843.9^2 - 7672.6^2)</span>
+        <span class="math">E = 33,224,705,625 J</span>
+
+        <span class="math">Max P (Maximum power output) = 33228550000 / 0.0064</span>
+        <span class="math">Max P = 5.1919609e+12 Watt</span>
+
+        <span class="math">B (Magnetic field strength) = sqrt((2 * 1.256e-6 * 664575000) / 78.5)</span>
+        <span class="math">B = 4.61155071532 Tesla</span>
+
+        <span class="math">GFV (Gate Flyback Velocity) = (25000 * 171.3) / 50000</span>
+        <span class="math">GFV = 8.565 m/s</span>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h3>Dyson Swarm</h3>
+
+        <p>
+            Most efficient starting position: Mercury.<br>
+            Mercury?: Closest to sun. No atmosphere, easily mineable without major impact on the
+            gravitational balance of the solar system.
+        </p>
+
+        <p>
+            Growth Curve: Exponential growth using Positive Feedback Loops and an S-Curve (As
+            suggested by Mr. Seiler at the ESA ACT).
+        </p>
+
+        <p>
+            Orbital Dynamics: Using Keplers Third Law to determine the orbital period and the required
+            Delta-V to reach the destination. (In the code this is 1 AU).
+        </p>
+
+        <p>
+            Thermal Equilibrium: using the Stefan-Boltzmann Law we can calculate the distance where a
+            satellite keeps a specific operating temperature so the swarm does not freeze or melt.
+        </p>
+
+        <p>
+            The satellites will contain the energy then continue to send it to Earth. This way we will have
+            enough energy to build theoretical mega concepts to save mankind (like the Pill).
+        </p>
+
+        <p>
+            The code takes care of how long it takes. But always do it * 1.7 to take into account of
+            Human error. Nothing we have ever done, or will ever do. Will be perfect.
+        </p>
+
+        <p>
+            <a href="https://github.com/Jits-Doomen/Dyson-Swarm-Calculator" target="_blank">
+                https://github.com/Jits-Doomen/Dyson-Swarm-Calculator
+            </a>
+        </p>
+    </div>
+
+    <hr>
+
+        <div class="section">
+        <h3>Cryogenic Study</h3>
+
+        <p>
+            The optimal temperature for cryogenic freezing is -196 degrees Celsius. Here molecular motion
+            gets close enough to stopping. By staying at this temperature you create a safe window of
+            72 degrees. If the cooling system fails, the crew has enough time to fix it before the bodies
+            warm up enough to die
+        </p>
+
+        <p>
+           Problem: When taking a human body from 37 degrees Celsius to -196 degrees Celsius. The
+            tissues shrink. Between 0 degrees and -40 degrees water in the cells try to turn into ice
+            crystals. If you go through this temperature zone too slow the person inside turns into
+            shredded cells 
+        </p>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h3>Constants</h3>
+        <span class="math">Human body water: (approx) 60%</span>
+        <span class="math">Latent heat of fusion: 334 kJ/kg</span>
+        <span class="math">Glass trans point: -124 degrees celsius</span>
+        <span class="math">Expansion coefficient of ice: 9%</span>
+        <span class="math">m = 187500</span>
+        <span class="math">c: 3500</span>
+        <span class="math">Delta-T = 40</span>
+        <span class="math">t = 60</span>
+    </div>
+
+    <div class="section">
+        <h3>Primary Calculations</h3>
+
+        <span class="math">Q = 187500 * 3500 * 40</span>
+        <span class="math">Q = 2.625e10</span>
+
+        <span class="math">Ql = (187500 * 0.60) * 334000</span>
+        <span class="math">Ql = 3.7575e10</span>
+
+        <span class="math">Q-Total = 2.625e10 + 3.7575e10</span>
+        <span class="math">Q-Total = 6.3825e10</span>
+
+        <span class="math">P = 6.3825e10 / 60</span>
+        <span class="math">P = 1.06375e9</span>
+    </div>
+
+    <hr>
+
+    <div class="section">
+        <h3>J Accel Equation</h3>
+
+        <span class="math">delta_J = m3 * v_entry * R * sin(theta)</span>
+
+        <p>m3: Mass of your star</p>
+        <p>v_entry: The velocity of passing star as it exits the 3-Body Gateway</p>
+        <p>R: The Radius of the Black Hole's edge where passing Star impacts</p>
+        <p>sin(theta): The Angle of Impact</p>
+    </div>
+
+    <div class="section">
+        <h3>Den Equation</h3>
+
+        <span class="math">J = J_Initial + Delta_J</span>
+    </div>
+
+    <div class="section">
+        <h3>Doomen Equation</h3>
+
+        <span class="math">a = (J * c) / (G * M2)</span>
+
+        <p>To get a Naked Singularity A > 1.</p>
+        <p>a: The Dimensionless Spin Parameter</p>
+        <p>J: Total Angular Momentum (Initial Spin + The J Accel from the passing star).</p>
+        <p>M: Total Mass (Initial Mass + the added Mass of passing star)</p>
+        <p>G: Gravitational Constant</p>
+        <p>c: Speed of Light</p>
+    </div>
+
+</body>
+</html>
